@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI/UX Development | Pamudith</title>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Page CSS -->
+  <link rel="stylesheet" href="service-uiux.css">
+</head>
+<body>
+  <section class="container reveal">
+    <h1 class="neon-text">UI/UX Development</h1>
+    <img src="assets/uiux/main-uiux.jpg" alt="UI/UX Design Showcase" class="service-detail-img">
+
+    <p class="intro-text">
+      I specialize in crafting visually appealing and user-friendly interfaces that enhance user experience. 
+      My design process combines creativity with usability principles — ensuring every interaction feels smooth, 
+      consistent, and intuitive across devices.
+    </p>
+
+    <!-- Project Gallery -->
+    <div class="uiux-projects">
+      <div class="project-card lift">
+        <img src="assets/uiux/project1.jpg" alt="UI/UX Project 1">
+        <h3>Helthcare Mobile App Design</h3>
+        <p>A healthcare mobile app is designed to help users manage their health and wellness conveniently through their smartphones. The goal of such an app is to provide easy access to medical information, health tracking, appointment booking, and communication with healthcare providers. A good healthcare app design focuses on **user-friendliness, security, and accuracy**, ensuring that users can easily navigate, input data, and access vital health services anytime, anywhere.It often includes features like **patient registration, doctor consultation, medication reminders, health records, and fitness tracking**, all presented with a clean, simple, and intuitive interface.</p>
+        <a href="https://www.figma.com/proto/IbqngqcwIlQJb96AtO6lOM/Untitled?node-id=6-274&starting-point-node-id=4%3A590&t=GoRAY5bbjeJWIPue-1" class="accent-btn small">View Project</a>
+      </div>
+
+      <div class="project-card lift">
+        <img src="assets/uiux/project2.jpg" alt="UI/UX Project 2">
+        <h3>To-Do App UI</h3>
+        <p>A To-Do app is a simple and effective productivity tool designed to help users organize their daily tasks and manage their time efficiently. It allows users to create, edit, and track tasks or goals, ensuring that important activities are completed on time.The main purpose of a To-Do app is to improve personal organization and productivity by providing features such as task categorization, due dates, reminders, and progress tracking. With a clean and intuitive design, users can easily focus on their priorities and stay on top of their daily schedules.</p>
+        <a href="https://www.figma.com/proto/jnyGvuEJYUXp93gq3Kno0a/TodoApp--Community-?node-id=24-2616&t=AbCC389gmNbFMd2l-1" class="accent-btn small">View Project</a>
+      </div>
+
+      <div class="project-card lift">
+        <img src="assets/uiux/project3.jpg" alt="UI/UX Project 3">
+        <h3>GPA Calculator App UI</h3>
+        <p>A GPA calculator app helps students quickly calculate their Grade Point Average. It simplifies tracking academic performance by allowing easy input of grades and credits to get accurate results instantly</p>
+        <a href="https://www.figma.com/proto/gPtWhbLqPVUSKLi8982oaU/Book-App?node-id=9-26&starting-point-node-id=9%3A26&t=omYFiKW4oox8XPYC-1" class="accent-btn small">View Project</a>
+      </div>
+
+      <div class="project-card lift">
+        <img src="assets/uiux/project4.jpg" alt="UI/UX Project 4">
+        <h3>School Time Table UI Design</h3>
+        <p>A school timetable app helps students organize their class schedules efficiently. It allows them to view, manage, and track their daily or weekly subjects, making it easier to stay on time and avoid confusion.</p>
+        <a href="https://www.figma.com/proto/jnyGvuEJYUXp93gq3Kno0a/TodoApp--Community-?node-id=24-2616&t=AbCC389gmNbFMd2l-1" class="accent-btn small">View Project</a>
+      </div>
+    </div>
+
+    <div class="back-btn-wrap">
+      <a href="index.html#services" class="accent-btn">← Back to Services</a>
+    </div>
+  </section>
+
+  <script>
+    // Simple reveal animation
+    const reveals = document.querySelectorAll(".reveal");
+    const onScroll = () => {
+      for (let r of reveals) {
+        const top = r.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) r.classList.add("in-view");
+      }
+    };
+    window.addEventListener("scroll", onScroll);
+    onScroll();
+  </script>
+</body>
+</html>

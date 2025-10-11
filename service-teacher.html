@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>As a Prospective Teacher | Pamudith</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="container reveal">
+    <h1 class="neon-text">As A Prospective Teacher</h1>
+    <img src="assets/teacher.jpg" alt="Full Stack" class="service-detail-img">
+    <p></p>
+    <a href="index.html#services" class="accent-btn">← Back to Services</a>
+  </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>As a Prospective Teacher | Pamudith</title>
+
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Page-specific Styles -->
+  <link rel="stylesheet" href="service-fullstack.css" />
+</head>
+<body>
+  <section class="container reveal">
+    <h1 class="neon-text">As A Prospective Teacher</h1>
+    <p class="intro-text">
+      Some of the activities I have carried out and programs I have participated in at the Siyane National College of Education from 2024.09.06 to date
+    </p>
+
+    <!-- 15 Image Gallery -->
+    <div class="gallery">
+      <div class="img-box">
+        <img src="assets/fullstack/01-html-structure.jpg" alt="HTML Structure" />
+        <p class="caption">In Teacher's Day Ceromeny - 2024 </p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/02-css-styling.jpg" alt="CSS Styling" />
+        <p class="caption">In Pirith Ceromeny - 2024 (Before Batch Trip Day 34th Batch)</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/03-js-logic.jpg" alt="JavaScript Logic" />
+        <p class="caption">English Day Drama Program - 2024</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/04-react-ui.jpg" alt="React UI" />
+        <p class="caption">As A Photographer in Christmas Day Ceromeny - 2024</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/05-node-server.jpg" alt="Node Server" />
+        <p class="caption">Design Arts For Media Day Ceromeny</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/06-database.jpg" alt="Database" />
+        <p class="caption"> Art For Sathsara Dehena </p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/07-api-integration.jpg" alt="API Integration" />
+        <p class="caption">School Profile in St Mary's College</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/08-authentication.jpg" alt="Authentication" />
+        <p class="caption">Decorations Pirith Ceromeny</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/09-deployment.jpg" alt="Deployment" />
+        <p class="caption">Pirith Ceromeny</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/10-debugging.jpg" alt="Debugging" />
+        <p class="caption">Decorations For Sports Meet - 2025</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/11-responsive-design.jpg" alt="Responsive Design" />
+        <p class="caption">Designed Leaflet For Environment Day </p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/12-testing.jpg" alt="Testing" />
+        <p class="caption">As A Duty Student</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/13-performance.jpg" alt="Performance" />
+        <p class="caption">At Haritha Dina Program</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/14-security.jpg" alt="Security" />
+        <p class="caption">Design Electrical And Electronic Class</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/15-version-control.jpg" alt="Version Control" />
+        <p class="caption">First Block Teaching Sanghabodhi Centrel College- Nittabuwa </p>
+      </div>
+    </div>
+
+    <div class="back-btn-wrap">
+      <a href="index.html#services" class="accent-btn">← Back to Services</a>
+    </div>
+  </section>
+
+  <script>
+    // Simple reveal animation on scroll
+    const reveals = document.querySelectorAll(".reveal");
+    const onScroll = () => {
+      for (let r of reveals) {
+        const top = r.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) r.classList.add("in-view");
+      }
+    };
+    window.addEventListener("scroll", onScroll);
+    onScroll();
+  </script>
+</body>
+</html>
+

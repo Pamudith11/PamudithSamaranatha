@@ -373,3 +373,276 @@ footer {
     margin: 1rem 0;
   }
 }
+/* ===============================
+   ⚡ Services Section Styling
+================================*/
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.service-card {
+  text-decoration: none;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--panel);
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--accent);
+  box-shadow: 0 0 15px var(--accent);
+  transition: all 0.4s ease;
+}
+
+.service-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--accent);
+  filter: brightness(0.85);
+  transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+.service-card h3 {
+  margin: 0.8rem 0 0.4rem;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: var(--muted);
+  text-align: center;
+  padding: 0 1rem 1rem;
+}
+
+.service-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 0 25px var(--accent2);
+}
+
+.service-card:hover .service-img {
+  filter: brightness(1);
+  transform: scale(1.05);
+}
+/* ============ Service: As a prospective teacher page ============ */
+
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--accent);
+  text-shadow: 0 0 12px var(--accent);
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+}
+
+.intro-text {
+  text-align: center;
+  max-width: 800px;
+  margin: 1rem auto 2rem;
+  line-height: 1.6;
+  color: var(--text);
+  font-size: 1.1rem;
+}
+
+/* Gallery layout */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.img-box {
+  text-align: center;
+  overflow: hidden;
+  border-radius: 14px;
+  background: var(--panel);
+  padding: 0.8rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.img-box:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 0 25px var(--accent);
+}
+
+.img-box img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.img-box img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px var(--accent);
+}
+
+/* Caption under each image */
+.caption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+/* Back Button */
+.back-btn-wrap {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.accent-btn {
+  background: var(--accent);
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px var(--accent);
+}
+
+.accent-btn:hover {
+  background: var(--accent-2);
+  box-shadow: 0 0 25px var(--accent-2);
+}
+
+/* Reveal animation (in sync with your global reveal JS) */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Neon Text Effect (shared class) */
+.neon-text {
+  color: var(--accent);
+  text-shadow: 0 0 8px var(--accent), 0 0 16px var(--accent-2);
+}
+/* ============ UI/UX Service Page ============ */
+
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--accent);
+  text-shadow: 0 0 12px var(--accent);
+}
+
+.intro-text {
+  text-align: center;
+  max-width: 800px;
+  margin: 1rem auto 3rem;
+  font-size: 1.1rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.service-detail-img {
+  display: block;
+  max-width: 600px;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 0 25px var(--accent);
+}
+
+/* Project Grid */
+.uiux-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.project-card {
+  background: var(--panel);
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.project-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 0 25px var(--accent);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+}
+
+.project-card h3 {
+  margin: 0.6rem 0;
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
+.project-card p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.accent-btn.small {
+  padding: 0.6rem 1rem;
+  font-size: 0.85rem;
+}
+
+/* Back Button */
+.back-btn-wrap {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.neon-text {
+  color: var(--accent);
+  text-shadow: 0 0 10px var(--accent), 0 0 20px var(--accent-2);
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 15px;
+  text-decoration: none; /* Remove underline */
+  color: #fff; /* Neon text color */
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer; /* Makes it obvious it's clickable */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 255, 255, 0.5);
+}
