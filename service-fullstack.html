@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Stack Development | Pamudith</title>
+
+  <link rel="stylesheet" href="style.css"></head>
+<body>
+
+  <section class="container reveal">
+    <h1 class="neon-text" style="text-align: center; margin-top: 50px;">Full Stack Projects</h1>
+    <a href="https://pixelprism.us/audiolibrary/cash/home.html" target="_blank" class="project-card">
+        <img src="assets/Asateacher/project3.jpg" alt="Library System">
+        <div class="project-info">
+          <h3>Empowering Visually Impaired Learnings</h3>
+          <p>Click to view Live site</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="project-grid">
+      <a href="https://github.com/Pamudith11/AI-Powerd-Application-Tracking-System" target="_blank" class="project-card">
+        <img src="assets/Asateacher/project1.jpg" alt="AI Project">
+        <div class="project-info">
+          <h3>AI Powered Application Checkinhg System</h3>
+          <p>Click to view on GitHub</p>
+        </div>
+      </a>
+
+      <a href="https://github.com/Pamudith11/Photographer-Finder" target="_blank" class="project-card">
+        <img src="assets/Asateacher/project2.jpg" alt="Photographer Finder">
+        <div class="project-info">
+          <h3>Photographer Finder</h3>
+          <p>Click to view on GitHub</p>
+        </div>
+      </a>
+
+    <div style="text-align: center; margin-bottom: 50px;">
+      <a href="index.html#services" class="accent-btn">← Back to Services</a>
+    </div>
+  </section>
+
+</body>
+</html>
+<script>
+window.addEventListener("scroll", reveal);
+
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var revealTop = reveals[i].getBoundingClientRect().top;
+    var revealPoint = 150;
+
+    if (revealTop < windowHeight - revealPoint) {
+      reveals[i].classList.add("active");
+    }
+  }
+}
+
+// පේජ් එක මුලින්ම Load වූ විටත් මෙය ක්‍රියාත්මක කරන්න
+reveal();
+</script>
