@@ -844,3 +844,37 @@ noscript .reveal {
   opacity: 1;
   transform: translateY(0);
 }
+
+.cv-float-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #ff0055; /* ඔබේ තේමාවට අනුව පාට වෙනස් කරන්න */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(255, 0, 85, 0.4);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  font-family: sans-serif;
+  border: 2px solid transparent;
+}
+
+.cv-float-btn:hover {
+  background-color: transparent;
+  border: 2px solid #ff0055;
+  color: #ff0055;
+  transform: translateY(-3px);
+}
+
+/* Mobile එකේදී බටන් එක පොඩි කිරීමට */
+@media (max-width: 600px) {
+  .cv-float-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+    top: 10px;
+    right: 10px;
+  }
+}
