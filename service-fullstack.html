@@ -1,83 +1,126 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Full Stack Development | Pamudith</title>
+  <link rel="stylesheet" href="style.css">
 
-  <link rel="stylesheet" href="style.css"></head>
+  <style>
+    /* Mobile Responsive Grid Styling */
+    .project-grid {
+      display: grid;
+      /* Mobile වලදී එක කාඩ් එකක් පෙන්වීමට සහ ලොකු screen වලදී ඉඩ ඇති පරිදි බෙදා ගැනීමට */
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      width: 100%;
+      box-sizing: border-box;
+      justify-content: center;
+    }
+
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      background: #1e1e1e; /* Example dark bg */
+      border-radius: 10px;
+      overflow: hidden;
+      text-decoration: none;
+      color: white;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      /* පින්තූර සහ විස්තර හරියට සෙන්ටර් වෙන්න */
+      align-items: center; 
+      text-align: center;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-info {
+      padding: 15px;
+    }
+
+    /* Mobile only adjustments if needed */
+    @media (max-width: 600px) {
+      .project-grid {
+        grid-template-columns: 1fr; /* Mobile වලදී අනිවාර්යයෙන් තනි පේලියට */
+      }
+    }
+  </style>
+</head>
 <body>
 
   <section class="container reveal">
     <h1 class="neon-text" style="text-align: center; margin-top: 50px;">Full Stack Projects</h1>
 
     <div class="project-grid">
+      
       <a href="https://github.com/Pamudith11/-Voice-controlled-audiobook-system" target="_blank" class="project-card">
-        <img src="assets/Asateacher/project3.jpg" alt="AI Project">
+        <img src="assets/Asateacher/project3.jpg" alt="VoiceAccess">
         <div class="project-info">
           <h3>VoiceAccess - AI-Powered Accessible Audio Library</h3>
           <p>Click to view on GitHub And Live Site</p>
         </div>
       </a>
       
-      <div class="project-grid">
       <a href="https://github.com/Pamudith11/AI-Powerd-Application-Tracking-System" target="_blank" class="project-card">
-        <img src="assets/Asateacher/project4.jpg" alt="AI Project">
+        <img src="assets/Asateacher/project4.jpg" alt="EduWeb">
         <div class="project-info">
-          <h3> EduWeb - NCOE Exchange Program Portal</h3>
+          <h3>EduWeb - NCOE Exchange Program Portal</h3>
           <p>Click to view on GitHub And Live Site</p>
         </div>
       </a>
 
-    <div class="project-grid">
       <a href="https://github.com/Pamudith11/AI-Powerd-Application-Tracking-System" target="_blank" class="project-card">
-        <img src="assets/Asateacher/project1.jpg" alt="AI Project">
+        <img src="assets/Asateacher/project1.jpg" alt="AI Tracking">
         <div class="project-info">
-          <h3>AI Powered Application Checkinhg System</h3>
+          <h3>AI Powered Application Checking System</h3>
           <p>Click to view on GitHub And Live Site</p>
         </div>
       </a>
 
-    <div class="project-grid">
       <a href="https://github.com/Pamudith11/PamudithSamaranatha" target="_blank" class="project-card">
-        <img src="assets/Asateacher/project5.jpg" alt="AI Project">
+        <img src="assets/Asateacher/project5.jpg" alt="Portfolio">
         <div class="project-info">
           <h3>E-Portfolio</h3>
           <p>Click to view on GitHub And Live Site</p>
         </div>
       </a>
 
-    <div class="project-grid">
       <a href="https://github.com/Pamudith11/Photographer-Finder" target="_blank" class="project-card">
-        <img src="assets/Asateacher/project2.jpg" alt="AI Project">
+        <img src="assets/Asateacher/project2.jpg" alt="Photographer Finder">
         <div class="project-info">
           <h3>Photographer Finder</h3>
           <p>Click to view on GitHub And Live Site</p>
         </div>
       </a>
 
-    <div style="text-align: center; margin-bottom: 50px;">
+    </div> <div style="text-align: center; margin-bottom: 50px; margin-top: 30px;">
       <a href="index.html#services" class="accent-btn">🔙 Back to Services</a>
     </div>
   </section>
 
+  <script>
+    window.addEventListener("scroll", reveal);
+
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var revealTop = reveals[i].getBoundingClientRect().top;
+        var revealPoint = 150;
+
+        if (revealTop < windowHeight - revealPoint) {
+          reveals[i].classList.add("active");
+        }
+      }
+    }
+
+    // පේජ් එක මුලින්ම Load වූ විටත් මෙය ක්‍රියාත්මක කරන්න
+    reveal();
+  </script>
 </body>
 </html>
-<script>
-window.addEventListener("scroll", reveal);
-
-function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var revealTop = reveals[i].getBoundingClientRect().top;
-    var revealPoint = 150;
-
-    if (revealTop < windowHeight - revealPoint) {
-      reveals[i].classList.add("active");
-    }
-  }
-}
-
-// පේජ් එක මුලින්ම Load වූ විටත් මෙය ක්‍රියාත්මක කරන්න
-reveal();
-</script>
