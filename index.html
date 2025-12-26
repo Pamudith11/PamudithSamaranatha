@@ -58,6 +58,42 @@
       border-radius: 10px;
      margin-bottom: 15px;
     }
+    /* Skills Grid Styling */
+.skill-grid {
+    display: flex;
+    flex-wrap: wrap; /* මෙන්න මේ කෑල නිසා තමයි skills ඉඩ මදි වුනාම පහළට කැඩෙන්නේ */
+    justify-content: center; /* මැදට ගන්න */
+    gap: 20px; /* Skills අතර පරතරය */
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.skill {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 25px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Mobile Responsive */
+    min-width: 120px;
+    justify-content: center;
+}
+
+.skill:hover {
+    background: #00e5ff;
+    color: #000;
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #00e5ff;
+}
+
+.skill-img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
 
     /* Skill Grid Specific */
     .skill-grid {
@@ -278,7 +314,7 @@
         <span>React</span>
       </div>
       
-       <div class="skill lift neon-skill">
+      <div class="skill lift neon-skill">
         <img src="assets/node.png" alt="Node" class="skill-img">
         <span>Node.js</span>
       </div>
@@ -286,11 +322,12 @@
        <div class="skill lift neon-skill">
         <img src="assets/flutter.png" alt="Flutter" class="skill-img">
         <span>Flutter</span>
+      </div>
 
-         <div class="skill lift neon-skill">
-      <img src="assets/python.png" alt="Python" class="skill-img">
-      <span>Python</span>
-    </div>
+      <div class="skill lift neon-skill">
+        <img src="assets/python.png" alt="Python" class="skill-img">
+        <span>Python</span>
+      </div>
 
     <div class="skill lift neon-skill">
       <img src="assets/java.png" alt="Java" class="skill-img">
@@ -316,11 +353,9 @@
       <img src="assets/cpp.png" alt="C++" class="skill-img">
       <span>C++</span>
     </div>
-      </div>
       
-
     </div>
-  </section>
+ </section>
 
   <section id="social" class="container reveal">
     <h2 class="neon-text">🌐 Connect With Me</h2>
