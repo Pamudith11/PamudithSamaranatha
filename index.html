@@ -11,6 +11,22 @@
   <link rel="stylesheet" href="style.css" />
 
   <style>
+    /* Profile Image Fix for Mobile */
+    .profile {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover; /* පින්තූරය රවුමට හැඩගැන්වීමට */
+      
+      /* Mobile වල මැදට ගැනීමට වැදගත්ම කොටස */
+      display: block; 
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+      
+      /* Screen එකෙන් එලියට යාම වැලැක්වීමට */
+      max-width: 80%; 
+    }
     /* General Grid Layout for All Sections */
     .grid-container {
       display: grid;
@@ -360,12 +376,12 @@
   <section id="social" class="container reveal">
     <h2 class="neon-text">🌐 Connect With Me</h2>
     <div class="social-icons" style="text-align: center; margin-top: 20px; font-size: 1.5rem;">
-      <a href="#" class="social-btn"><i class="fab fa-whatsapp"></i></a>
-      <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
-      <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
-      <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
-      <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/94778965382" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.facebook.com/share/1C3DNnXs9c/?mibextid=wwXIfr" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+      <a href="mailto:pamudith11@gmail.com" class="social-btn" aria-label="Gmail"><i class="fab fa-google"></i></a>
+      <a href="https://github.com/Pamudith11" class="social-btn"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/pamudith-samaranatha-4b2987268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/pamudith_?igsh=MTV5dmlwdjNrNGF0YQ%3D%3D&utm_source=qr" class="social-btn"><i class="fab fa-instagram"></i></a>
     </div>
   </section>
 
