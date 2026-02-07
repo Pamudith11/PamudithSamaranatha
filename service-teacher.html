@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>As a Prospective Teacher | Pamudith</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="service-fullstack.css" />
+
+  <style>
+    /* ---- Custom Styles for this Page ---- */
+
+    /* Container styling */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Video Styling (Not Background anymore) */
+    .video-wrapper {
+      width: 100%;
+      max-width: 800px;
+      /* Desktop වල ගොඩක් ලොකු නොවී තියෙන්න */
+      margin: 30px auto 50px auto;
+      /* මැදට ගන්න */
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0, 229, 255, 0.4);
+      /* Neon Glow Effect */
+      border: 1px solid rgba(0, 229, 255, 0.5);
+    }
+
+    .top-video {
+      width: 100%;
+      display: block;
+    }
+
+    /* Intro Text Styling */
+    .intro-text {
+      max-width: 700px;
+      margin: 0 auto 20px auto;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    /* Gallery Grid System (Modern & Responsive) */
+    .gallery {
+      display: grid;
+      /* ඉඩ තියෙන විදියට columns හැදෙනවා (Mobile = 1, PC = 3 or 4) */
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 10px;
+      justify-content: center;
+    }
+
+    /* Image Card Styling (Mobile & Desktop) */
+    .img-box {
+      background: rgba(255, 255, 255, 0.05);
+      /* Glass Effect */
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Mouse ගෙනිච්චාම උඩට එන Effect එක */
+    .img-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 229, 255, 0.2);
+      border-color: rgba(0, 229, 255, 0.5);
+    }
+
+    .img-box img {
+      width: 100%;
+      height: 220px;
+      /* හැම පින්තූරයක්ම එකම උසට */
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .caption {
+      font-size: 0.95rem;
+      color: #ccc;
+      margin-top: auto;
+      /* Text එක හැමවෙලේම යටට ගන්න */
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    /* ---- Mobile Specific Styling (More Beautiful) ---- */
+    @media (max-width: 600px) {
+      .container {
+        padding: 15px;
+      }
+
+      .neon-text {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+      }
+
+      .intro-text {
+        font-size: 0.9rem;
+        padding: 0 10px;
+      }
+
+      .video-wrapper {
+        margin: 20px auto 30px auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+        /* Mobile වල තනි පේළියට */
+        gap: 25px;
+      }
+
+      .img-box {
+        background: rgba(20, 20, 30, 0.8);
+        /* Darker background for mobile readability */
+        padding: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        /* ලස්සන shadow එකක් */
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="container reveal">
+    <h1 class="neon-text">As A Prospective Teacher</h1>
+
+    <p class="intro-text">
+      Some of the activities I have carried out and programs I have participated in at the Siyane National College of
+      Education from 2024.09.06 to 2026.02.11 date
+    </p>
+
+    <div class="video-wrapper">
+      <video autoplay muted loop playsinline class="top-video">
+        <source src="assets/video/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="gallery">
+
+      <div class="img-box">
+        <img src="assets/fullstack/01-html-structure.jpg" alt="HTML Structure" />
+        <p class="caption">In Teacher's Day Ceromeny - 2024 </p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/02-css-styling.jpg" alt="CSS Styling" />
+        <p class="caption">In Pirith Ceromeny - 2024 (Before Batch Trip Day 34th Batch)</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/03-js-logic.jpg" alt="JavaScript Logic" />
+        <p class="caption">English Day Drama Program - 2024</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/04-react-ui.jpg" alt="React UI" />
+        <p class="caption">As A Photographer in Christmas Day Ceromeny - 2024</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/05-node-server.jpg" alt="Node Server" />
+        <p class="caption">Design Arts For Media Day Ceromeny</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/06-database.jpg" alt="Database" />
+        <p class="caption"> Art For Sathsara Dehena </p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/07-api-integration.jpg" alt="API Integration" />
+        <p class="caption">School Profile in St Mary's College</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/08-authentication.jpg" alt="Authentication" />
+        <p class="caption">Decorations Pirith Ceromeny</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/09-deployment.jpg" alt="Deployment" />
+        <p class="caption">Pirith Ceromeny</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/10-debugging.jpg" alt="Debugging" />
+        <p class="caption">Decorations For Sports Meet - 2025</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/11-responsive-design.jpg" alt="Responsive Design" />
+        <p class="caption">Designed Leaflet For Environment Day </p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/12-testing.jpg" alt="Testing" />
+        <p class="caption">As A Duty Student</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/13-performance.jpg" alt="Performance" />
+        <p class="caption">At Haritha Dina Program</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/14-security.jpg" alt="Security" />
+        <p class="caption">Design Electrical And Electronic Class</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/15-version-control.jpg" alt="Version Control" />
+        <p class="caption">First Block Teaching Sanghabodhi Centrel College- Nittabuwa </p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/16-guru-dinaya.jpg" alt="Guru Dinaya" />
+        <p class="caption">Decoratin Teacher's Day Ceromeny - 2025</p>
+      </div>
+
+      <div class="img-box">
+        <img src="assets/fullstack/17-activity.jpg" alt="Activity 17" />
+        <p class="caption">As A Videographer in English Day Drama Compitition - 2026</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/18-activity.jpg" alt="Activity 18" />
+        <p class="caption">At A Ceromeny - 2025</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/19-activity.jpg" alt="Activity 19" />
+        <p class="caption">Decoratin For Thaipongal Day Ceromeny - 2026</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/20-activity.jpg" alt="Activity 20" />
+        <p class="caption">Decoratin For English Day Ceromeny - 2026</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/29-activity.jpg" alt="Activity 29" />
+        <p class="caption">Agenda Design For A Ceromeny</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/21-activity.jpg" alt="Activity 21" />
+        <p class="caption">Announcing Morning Assembly - 2025</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/22-activity.jpg" alt="Activity 22" />
+        <p class="caption">Practicle Day - 2nd Teaching Practise</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/23-activity.jpg" alt="Activity 23" />
+        <p class="caption">Second Block Teaching Team</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/24-activity.jpg" alt="Activity 24" />
+        <p class="caption">Siyane Abhimani Ceremony - 2025</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/25-activity.jpg" alt="Activity 25" />
+        <p class="caption">English Day Drama Compitition - 2026</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/26-activity.jpg" alt="Activity 26" />
+        <p class="caption">Poson Bethigi Day - 2025</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/27-activity.jpg" alt="Activity 27" />
+        <p class="caption">Invitation Card Design</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/28-activity.jpg" alt="Activity 28" />
+        <p class="caption">English Day Singing Compitition - 2026</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/30-activity.jpg" alt="Activity 30" />
+        <p class="caption"> While Media Day Decoratins Making</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/31-activity.jpg" alt="Activity 31" />
+        <p class="caption">Sportmeet Day - 2025</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/32-activity.jpg" alt="Activity 32" />
+        <p class="caption">Painting For Siysne 40th Ceromeny</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/33-activity.jpg" alt="Activity 33" />
+        <p class="caption">Decoration For a Ceromeny</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/34-activity.jpg" alt="Activity 34" />
+        <p class="caption">Teachin Aids For School Profile</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/35-activity.jpg" alt="Activity 35" />
+        <p class="caption">Decoration For New Year Festival - 2025</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/36-activity.jpg" alt="Activity 36" />
+        <p class="caption">Field Trip - 2025</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/37-activity.jpg" alt="Activity 37" />
+        <p class="caption">Video Clip Design For Mahagamasekara Day - 2026</p>
+      </div>
+      <div class="img-box">
+        <img src="assets/fullstack/38-activity.jpg" alt="Activity 38" />
+        <p class="caption">Video Clip Design For Mahagamasekara Day - 2026</p>
+      </div>
+    </div>
+    <div class="back-btn-wrap" style="margin-top: 40px;">
+      <a href="index.html#services" class="accent-btn">← Back to Services</a>
+    </div>
+  </section>
+
+  <script>
+    // Simple reveal animation on scroll
+    const reveals = document.querySelectorAll(".reveal");
+    const onScroll = () => {
+      for (let r of reveals) {
+        const top = r.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) r.classList.add("in-view");
+      }
+    };
+    window.addEventListener("scroll", onScroll);
+    onScroll();
+  </script>
+</body>
+
+</html>
