@@ -95,12 +95,23 @@
       margin-bottom: 15px;
     }
 
-    .caption {
-      font-size: 0.95rem;
+    .img-box h3 {
+      font-size: 1.1rem;
+      color: #00fff2;
+      margin-bottom: 10px;
+      text-align: center;
+      min-height: 40px;
+      /* To align titles somewhat */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .img-box p.desc {
+      font-size: 0.9rem;
       color: #ccc;
-      margin-top: auto;
-      /* Text එක හැමවෙලේම යටට ගන්න */
-      font-weight: 500;
+      margin-top: 10px;
+      text-align: justify;
       line-height: 1.4;
     }
 
@@ -140,6 +151,19 @@
         /* ලස්සන shadow එකක් */
       }
     }
+
+    /* Profile Image for Teacher Page */
+    .profile-img-teacher {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 20px auto;
+      display: block;
+      border: 3px solid #00fff2;
+      /* standard accent color if var doesn't work here, but let's try inline or rely on global var if defined in style.css */
+      box-shadow: 0 0 15px #00fff2;
+    }
   </style>
 </head>
 
@@ -147,6 +171,9 @@
 
   <section class="container reveal">
     <h1 class="neon-text">ගුරු ශිෂ්‍යයෙකු ලෙස</h1>
+
+    <!-- Profile Image -->
+    <img src="assets/teacher-profile.jpg" alt="Teacher Profile" class="profile-img-teacher reveal" />
 
     <!-- Sinhala Bio Section -->
     <!-- Sinhala Bio Section -->
@@ -298,157 +325,203 @@
     <div class="gallery">
 
       <div class="img-box">
+        <h3>2024 ගුරු දින උත්සවයේ සැරසිලි</h3>
         <img src="assets/fullstack/01-html-structure.jpg" alt="HTML Structure" />
-        <p class="caption">2024 ගුරු දින උත්සවයේ සැරසිලි</p>
+        <p class="desc">2024 ගුරු දින උත්සවයේ සැරසිලි කටයුතු සඳහා දායක විය</p>
       </div>
       <div class="img-box">
+        <h3>2024 පිරිත් පින්කමේදී</h3>
         <img src="assets/fullstack/02-css-styling.jpg" alt="CSS Styling" />
-        <p class="caption">2024 පිරිත් පින්කමේදී (34 වන කණ්ඩායමේ චාරිකාවට පෙර)</p>
+        <p class="desc">2024 පිරිත් පින්කම </p>
       </div>
       <div class="img-box">
+        <h3>2024 ඉංග්‍රීසි දින නාට්‍ය වැඩසටහන</h3>
         <img src="assets/fullstack/03-js-logic.jpg" alt="JavaScript Logic" />
-        <p class="caption">2024 ඉංග්‍රීසි දින නාට්‍ය වැඩසටහන</p>
+        <p class="desc">2024 ඔක්තොම්බර් මස 23වන දින ඉංග්‍රීසි සාහිත්‍ය සංගමය මගින් පැවැත්වූ නාට්‍ය සදහා රංගනයෙන් සහ
+          සැරසිලි කටයුතු සඳහා දායක විය.</p>
       </div>
       <div class="img-box">
+        <h3>2024 නත්තල් දින උත්සවයේ ඡායාරූප ශිල්පියෙකු ලෙස</h3>
         <img src="assets/fullstack/04-react-ui.jpg" alt="React UI" />
-        <p class="caption">2024 නත්තල් දින උත්සවයේ ඡායාරූප ශිල්පියෙකු ලෙස</p>
+        <p class="desc">ආගමික සංගමයෙන් පවත්වනු ලැබූ නත්තල් උත්සවය සඳහා 2024.12.05 වන දින ඡායාරූප ශිල්පියෙකු ලෙස</p>
       </div>
       <div class="img-box">
+        <h3>මාධ්‍ය දින උත්සවය සඳහා නිර්මාණ</h3>
         <img src="assets/fullstack/05-node-server.jpg" alt="Node Server" />
-        <p class="caption">මාධ්‍ය දින උත්සවය සඳහා නිර්මාණ</p>
+        <p class="desc">මාධ්‍ය දින උත්සවය සඳහා නිර්මාණ</p>
       </div>
       <div class="img-box">
+        <h3>සත්සර දැහැන සඳහා චිත්‍ර</h3>
         <img src="assets/fullstack/06-database.jpg" alt="Database" />
-        <p class="caption">සත්සර දැහැන සඳහා චිත්‍ර</p>
+        <p class="desc">2024.12.12 වන දින සංස්කෘතික සංගමය මඟින් පවත්වනු ලැබූ සත්සර දැහැන සඳහා චිත්‍ර ඇදීම</p>
       </div>
       <div class="img-box">
+        <h3>සාන්ත මරියා විද්‍යාලයේ පාසල් පැතිකඩ</h3>
         <img src="assets/fullstack/07-api-integration.jpg" alt="API Integration" />
-        <p class="caption">සාන්ත මරියා විද්‍යාලයේ පාසල් පැතිකඩ</p>
+        <p class="desc">2025.1.27වන දින සිට සාන්ත මරියා විද්‍යාලයේ පාසල් පැතිකඩ සඳහා සහභාගි විය</p>
       </div>
       <div class="img-box">
+        <h3>පිරිත් පින්කම් සැරසිලි</h3>
         <img src="assets/fullstack/08-authentication.jpg" alt="Authentication" />
-        <p class="caption">පිරිත් පින්කම් සැරසිලි</p>
+        <p class="desc">2025.2.21 වන දින පැවැත්වූ පිරිත් පින්කම් සැරසිලි</p>
       </div>
       <div class="img-box">
+        <h3>පිරිත් පින්කම</h3>
         <img src="assets/fullstack/09-deployment.jpg" alt="Deployment" />
-        <p class="caption">පිරිත් පින්කම</p>
+        <p class="desc">2025.2.21 වන දින පිරිතට සමගාමීව පැවැත්වූ පෙරහැරට සහභාගි විය</p>
       </div>
       <div class="img-box">
+        <h3>2025 ක්‍රීඩා උත්සවයේ සැරසිලි</h3>
         <img src="assets/fullstack/10-debugging.jpg" alt="Debugging" />
-        <p class="caption">2025 ක්‍රීඩා උත්සවයේ සැරසිලි</p>
+        <p class="desc">2025.03.28 වන දින පැවැත්වූ නිවාසාන්තර ක්‍රීඩා උළෙලේ සැරසිලි කටයුතු සඳහා දායක විය</p>
       </div>
       <div class="img-box">
+        <h3>පරිසර දිනය සඳහා පත්‍රිකා නිර්මාණය</h3>
         <img src="assets/fullstack/11-responsive-design.jpg" alt="Responsive Design" />
-        <p class="caption">පරිසර දිනය සඳහා පත්‍රිකා නිර්මාණය</p>
+        <p class="desc">2026 06 මස 06 වන දින පරිසර දිනය සඳහා පත්‍රිකා නිර්මාණය</p>
       </div>
       <div class="img-box">
+        <h3>කාර්ය භාර ශිෂ්‍යයෙකු ලෙස</h3>
         <img src="assets/fullstack/12-testing.jpg" alt="Testing" />
-        <p class="caption">කාර්ය භාර ශිෂ්‍යයෙකු ලෙස</p>
+        <p class="desc">කාර්ය භාර ශිෂ්‍යයෙකු ලෙස 2025.(01.07)(04.07)(07.20)(10.26) 2026.02.06</p>
       </div>
       <div class="img-box">
+        <h3>හරිත දින වැඩසටහනේදී</h3>
         <img src="assets/fullstack/13-performance.jpg" alt="Performance" />
-        <p class="caption">හරිත දින වැඩසටහනේදී</p>
+        <p class="desc">හරිත දින වැඩසටහන සඳහා සහභාගි විය.</p>
       </div>
       <div class="img-box">
+        <h3>විදුලි හා ඉලෙක්ට්‍රොනික පන්තිය</h3>
         <img src="assets/fullstack/14-security.jpg" alt="Security" />
-        <p class="caption">විදුලි හා ඉලෙක්ට්‍රොනික පන්තිය</p>
+        <p class="desc">35 Batch විදුලි හා ඉලෙක්ට්‍රොනික පන්තිය</p>
       </div>
       <div class="img-box">
+        <h3>පළමු බ්ලොක් ඉගැන්වීම - සංඝබෝධි මධ්‍ය මහා විද්‍යාලය</h3>
         <img src="assets/fullstack/15-version-control.jpg" alt="Version Control" />
-        <p class="caption">පළමු බ්ලොක් ඉගැන්වීම - සංඝබෝධි මධ්‍ය මහා විද්‍යාලය, නිට්ටඹුව</p>
+        <p class="desc">2025.09.22 සිට 2025.10.03 දක්වා පළමු කාණ්ඩ ගුරු පුහුණුව සඳහා සහභාගි විය.</p>
       </div>
       <div class="img-box">
+        <h3>2025 ගුරු දින උත්සව සැරසිලි</h3>
         <img src="assets/fullstack/16-guru-dinaya.jpg" alt="Guru Dinaya" />
-        <p class="caption">2025 ගුරු දින උත්සව සැරසිලි</p>
+        <p class="desc">2026 10 මස 06 වන දින ගුරු දින උත්සව සැරසිලි සැරසිලි කටයුතු සඳහා දායක විය</p>
       </div>
 
       <div class="img-box">
+        <h3>2026 ඉංග්‍රීසි දින නාට්‍ය තරඟයේ වීඩියෝ ශිල්පියෙකු ලෙස</h3>
         <img src="assets/fullstack/17-activity.jpg" alt="Activity 17" />
-        <p class="caption">2026 ඉංග්‍රීසි දින නාට්‍ය තරඟයේ වීඩියෝ ශිල්පියෙකු ලෙස</p>
+        <p class="desc">2026 ජනවාරි මස 20 වන දින ඉංග්‍රීසි සාහිත්‍ය සංගමය මගින් පැවැත්වූ නාට්‍ය තරඟයේ වීඩියෝ ශිල්පියෙකු
+          ලෙස</p>
       </div>
       <div class="img-box">
+        <h3>2025 උත්සවයකදී</h3>
         <img src="assets/fullstack/18-activity.jpg" alt="Activity 18" />
-        <p class="caption">2025 උත්සවයකදී</p>
+        <p class="desc">2025.11.20 වන දින පිඨාධිපති ප්‍රීති කරුණාතිලක මැතිණියගේ නික්මයාම උත්සවයේ </p>
       </div>
       <div class="img-box">
+        <h3>2026 තෛපොංගල් දින උත්සව සැරසිලි</h3>
         <img src="assets/fullstack/19-activity.jpg" alt="Activity 19" />
-        <p class="caption">2026 තෛපොංගල් දින උත්සව සැරසිලි</p>
+        <p class="desc">2026.01.14 වන දින පැවැත්වූ තෛපොංගල් උත්සවය සැරසිලි කිරීම</p>
       </div>
       <div class="img-box">
+        <h3>2026 ඉංග්‍රීසි දින උත්සව සැරසිලි</h3>
         <img src="assets/fullstack/20-activity.jpg" alt="Activity 20" />
-        <p class="caption">2026 ඉංග්‍රීසි දින උත්සව සැරසිලි</p>
+        <p class="desc">2026 ජනවාරි මස 20 වන දින ඉංග්‍රීසි සාහිත්‍ය සංගමය මගින් පැවැත්වූ නාට්‍ය සදහා සැරසිලි සඳහා සහභාගී
+          විය</p>
       </div>
       <div class="img-box">
+        <h3>උත්සවයක න්‍යාය පත්‍ර නිර්මාණය</h3>
         <img src="assets/fullstack/29-activity.jpg" alt="Activity 29" />
-        <p class="caption">උත්සවයක න්‍යාය පත්‍ර නිර්මාණය</p>
+        <p class="desc">2025.6.25 වන දින හරිත සංගමය මඟින් පැවැත්වූ හරිත නියමුවෝ වැඩසටහන න්‍යාය පත්‍ර නිර්මාණය </p>
       </div>
       <div class="img-box">
+        <h3>2025 උදෑසන රැස්වීම නිවේදනය කිරීම</h3>
         <img src="assets/fullstack/21-activity.jpg" alt="Activity 21" />
-        <p class="caption">2025 උදෑසන රැස්වීම නිවේදනය කිරීම</p>
+        <p class="desc">2025.10.20 වන දින උදෑසන රැස්වීම නිවේදනය කිරීම</p>
       </div>
       <div class="img-box">
+        <h3>ප්‍රායෝගික දිනය - 2වන ඉගැන්වීම් පුහුණුව</h3>
         <img src="assets/fullstack/22-activity.jpg" alt="Activity 22" />
-        <p class="caption">ප්‍රායෝගික දිනය - 2වන ඉගැන්වීම් පුහුණුව</p>
+        <p class="desc">2026.01.28 වන දින ප්‍රායෝගික දිනය PTS ප්‍රායෝගික </p>
       </div>
       <div class="img-box">
+        <h3>2වන ඉගැන්වීම් පුහුණු කණ්ඩායම</h3>
         <img src="assets/fullstack/23-activity.jpg" alt="Activity 23" />
-        <p class="caption">2වන ඉගැන්වීම් පුහුණු කණ්ඩායම</p>
+        <p class="desc">2026.01.26 සිට 2026.01.31 දක්වා 2වන කාණ්ඩ ගුරු පුහුණුව සඳහා සහභාගි විය.</p>
       </div>
       <div class="img-box">
+        <h3>සියනෑ අභිමාන උත්සවය - 2025</h3>
         <img src="assets/fullstack/24-activity.jpg" alt="Activity 24" />
-        <p class="caption">සියනෑ අභිමාන උත්සවය - 2025</p>
+        <p class="desc">සියනෑ අභිමාන උත්සවය සදහා සහභාගී විය- 2025</p>
       </div>
       <div class="img-box">
+        <h3>ඉංග්‍රීසි දින නාට්‍ය තරඟය - 2026</h3>
         <img src="assets/fullstack/25-activity.jpg" alt="Activity 25" />
-        <p class="caption">ඉංග්‍රීසි දින නාට්‍ය තරඟය - 2026</p>
+        <p class="desc">2026 ජනවාරි මස 20 වන දින ඉංග්‍රීසි සාහිත්‍ය සංගමය මගින් පැවැත්වූ නාට්‍ය සදහා රංගනයෙන් සහභාගී විය
+        </p>
       </div>
       <div class="img-box">
+        <h3>පොසොන් බැති ගී සරණිය - 2025</h3>
         <img src="assets/fullstack/26-activity.jpg" alt="Activity 26" />
-        <p class="caption">පොසොන් බැති ගී සරණිය - 2025</p>
+        <p class="desc">2025.6.11 වන දින ආගමික සංගමය මඟින් පැවැත්වූ පොසොන් උත්සවය සඳහා පොසොන් බැති ගී වලින්ද දන්සලේ
+          වැඩකටයුතු සඳහාද සහභාගි විය</p>
       </div>
       <div class="img-box">
+        <h3>ආරාධනා පත්‍ර නිර්මාණය</h3>
         <img src="assets/fullstack/27-activity.jpg" alt="Activity 27" />
-        <p class="caption">ආරාධනා පත්‍ර නිර්මාණය</p>
+        <p class="desc">ආරාධනා පත්‍ර සැකසීම</p>
       </div>
       <div class="img-box">
+        <h3>ඉංග්‍රීසි දින ගායන තරඟය - 2026</h3>
         <img src="assets/fullstack/28-activity.jpg" alt="Activity 28" />
-        <p class="caption">ඉංග්‍රීසි දින ගායන තරඟය - 2026</p>
+        <p class="desc">2026 ජනවාරි මස 20 වන දින ඉංග්‍රීසි සාහිත්‍ය සංගමය මගින් පැවැත්වූ නාට්‍ය සදහා ගායනයෙන් සහභාගී විය
+        </p>
       </div>
       <div class="img-box">
+        <h3>මාධ්‍ය දින සැරසිලි නිර්මාණය කරමින්</h3>
         <img src="assets/fullstack/30-activity.jpg" alt="Activity 30" />
-        <p class="caption">මාධ්‍ය දින සැරසිලි නිර්මාණය කරමින්</p>
+        <p class="desc">මාධ්‍ය දින සැරසිලි නිර්මාණය කරමින්</p>
       </div>
       <div class="img-box">
+        <h3>ක්‍රීඩා උත්සවය - 2025</h3>
         <img src="assets/fullstack/31-activity.jpg" alt="Activity 31" />
-        <p class="caption">ක්‍රීඩා උත්සවය - 2025</p>
+        <p class="desc">2025.03.28 වන දින පැවැත්වූ නිවාසාන්තර ක්‍රීඩා උළෙල</p>
       </div>
       <div class="img-box">
+        <h3>සියනෑ 40වන සංවත්සරය සඳහා චිත්‍ර</h3>
         <img src="assets/fullstack/32-activity.jpg" alt="Activity 32" />
-        <p class="caption">සියනෑ 40වන සංවත්සරය සඳහා චිත්‍ර</p>
+        <p class="desc">2025.11. 27 වන දින 40 වන සංවත්සරය හේතුවෙන් තීන්ත ආලේප කිරීම</p>
       </div>
       <div class="img-box">
+        <h3>උත්සවයක සැරසිලි</h3>
         <img src="assets/fullstack/33-activity.jpg" alt="Activity 33" />
-        <p class="caption">උත්සවයක සැරසිලි</p>
+        <p class="desc">ආගමික සංගමයෙන් පවත්වනු ලැබූ නත්තල් උත්සවය සඳහා 2024.12.05 වන දින සහ සැරසිලි කටයුතු සඳහා සහභාගි
+          විය</p>
       </div>
       <div class="img-box">
+        <h3>පාසල් පැතිකඩ සඳහා ඉගැන්වීම් ආධාරක</h3>
         <img src="assets/fullstack/34-activity.jpg" alt="Activity 34" />
-        <p class="caption">පාසල් පැතිකඩ සඳහා ඉගැන්වීම් ආධාරක</p>
+        <p class="desc">2025.01.25-31 වන දින පාසල් පැතිකඩ සඳහා ඉගැන්වීම් ආධාරක </p>
       </div>
       <div class="img-box">
+        <h3>2025 අලුත් අවුරුදු උත්සව සැරසිලි</h3>
         <img src="assets/fullstack/35-activity.jpg" alt="Activity 35" />
-        <p class="caption">2025 අලුත් අවුරුදු උත්සව සැරසිලි</p>
+        <p class="desc">2025.04.23 වන දින සංස්කෘතික සංගමය මගින් පැවැත්වූ අවුරුදු උත්සවය සැරසිලි කටයුතු වලට සහභාගි විය
+        </p>
       </div>
       <div class="img-box">
+        <h3>ක්ෂේත්‍ර චාරිකාව - 2025</h3>
         <img src="assets/fullstack/36-activity.jpg" alt="Activity 36" />
-        <p class="caption">ක්ෂේත්‍ර චාරිකාව - 2025</p>
+        <p class="desc">2025.9.9 වන දින ක්ෂේත්‍ර චාරිකාව සඳහා සහභාගි විය</p>
       </div>
       <div class="img-box">
+        <h3>මහගම සේකර දින වීඩියෝ පට නිර්මාණය - 2026</h3>
         <img src="assets/fullstack/37-activity.jpg" alt="Activity 37" />
-        <p class="caption">මහගම සේකර දින වීඩියෝ පට නිර්මාණය - 2026</p>
+        <p class="desc">2026.01.21 වන දින මහගම සේකර දින වීඩියෝ පට නිර්මාණය </p>
       </div>
       <div class="img-box">
+        <h3>2025 නේවාසිකාගාර දිනය </h3>
         <img src="assets/fullstack/38-activity.jpg" alt="Activity 38" />
-        <p class="caption">මහගම සේකර දින වීඩියෝ පට නිර්මාණය - 2026</p>
+        <p class="desc">2025.10.30 වන දින නේවාසිකාගාර දිනය නිමිත්තෙන් වෙළෙඳ කුටියක් පැවැත්වීම </p>
       </div>
     </div>
     <div class="back-btn-wrap" style="margin-top: 40px;">
