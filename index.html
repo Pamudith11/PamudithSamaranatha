@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pamudith - Portfolio</title>
-  
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
@@ -16,17 +17,19 @@
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      object-fit: cover; /* පින්තූරය රවුමට හැඩගැන්වීමට */
-      
+      object-fit: cover;
+      /* පින්තූරය රවුමට හැඩගැන්වීමට */
+
       /* Mobile වල මැදට ගැනීමට වැදගත්ම කොටස */
-      display: block; 
+      display: block;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 20px;
-      
+
       /* Screen එකෙන් එලියට යාම වැලැක්වීමට */
-      max-width: 80%; 
+      max-width: 80%;
     }
+
     /* General Grid Layout for All Sections */
     .grid-container {
       display: grid;
@@ -39,7 +42,8 @@
 
     /* Card Basic Styles */
     .card {
-      background: rgba(255, 255, 255, 0.05); /* Glass effect dark */
+      background: rgba(255, 255, 255, 0.05);
+      /* Glass effect dark */
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 15px;
       padding: 20px;
@@ -59,57 +63,65 @@
     }
 
     /* Images inside cards */
-    .service-img, .project-img {
+    .service-img,
+    .project-img {
       width: 100%;
       height: 180px;
       object-fit: cover;
       border-radius: 10px;
       margin-bottom: 15px;
     }
+
     /* පින්තූර ලස්සනට පේන්න මේ CSS එක අවශ්‍යයි */
     .project-img {
       width: 100%;
-      height: 180px; /* උස සමානව තියාගන්න */
-      object-fit: cover; /* පින්තූරය කොටුවට ගැලපෙන සේ කපාගන්න */
+      height: 180px;
+      /* උස සමානව තියාගන්න */
+      object-fit: cover;
+      /* පින්තූරය කොටුවට ගැලපෙන සේ කපාගන්න */
       border-radius: 10px;
-     margin-bottom: 15px;
+      margin-bottom: 15px;
     }
+
     /* Skills Grid Styling */
-.skill-grid {
-    display: flex;
-    flex-wrap: wrap; /* මෙන්න මේ කෑල නිසා තමයි skills ඉඩ මදි වුනාම පහළට කැඩෙන්නේ */
-    justify-content: center; /* මැදට ගන්න */
-    gap: 20px; /* Skills අතර පරතරය */
-    margin-top: 30px;
-    padding: 20px;
-}
+    .skill-grid {
+      display: flex;
+      flex-wrap: wrap;
+      /* මෙන්න මේ කෑල නිසා තමයි skills ඉඩ මදි වුනාම පහළට කැඩෙන්නේ */
+      justify-content: center;
+      /* මැදට ගන්න */
+      gap: 20px;
+      /* Skills අතර පරතරය */
+      margin-top: 30px;
+      padding: 20px;
+    }
 
-.skill {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 15px 25px;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: 0.3s;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    /* Mobile Responsive */
-    min-width: 120px;
-    justify-content: center;
-}
+    .skill {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px 25px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: 0.3s;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      /* Mobile Responsive */
+      min-width: 120px;
+      justify-content: center;
+    }
 
-.skill:hover {
-    background: #00e5ff;
-    color: #000;
-    transform: translateY(-5px);
-    box-shadow: 0 0 15px #00e5ff;
-}
+    .skill:hover {
+      background: #00e5ff;
+      color: #000;
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px #00e5ff;
+    }
 
-.skill-img {
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
-}
+    .skill-img {
+      width: 30px;
+      height: 30px;
+      object-fit: contain;
+    }
 
     /* Skill Grid Specific */
     .skill-grid {
@@ -129,9 +141,10 @@
       gap: 10px;
       transition: 0.3s;
     }
-    
+
     .skill:hover {
-      background: #00e5ff; /* Cyan highlight */
+      background: #00e5ff;
+      /* Cyan highlight */
       color: #000;
     }
 
@@ -143,13 +156,16 @@
     /* Mobile Responsive Fixes */
     @media (max-width: 600px) {
       .grid-container {
-        grid-template-columns: 1fr; /* Mobile වලදී තනි පේළියට */
+        grid-template-columns: 1fr;
+        /* Mobile වලදී තනි පේළියට */
       }
+
       .container {
-        padding: 20px;
+        padding: 120px 20px 20px 20px;
+        /* Increased top padding to clear fixed header */
       }
     }
-    
+
     /* Center Headings */
     h2 {
       text-align: center;
@@ -158,6 +174,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -174,25 +191,29 @@
     </nav>
     <button id="mode-toggle">🌙</button>
   </header>
-  
+
   <a href="#" class="cv-float-btn" target="_blank">View CV</a>
-  
+
   <section id="home" class="container reveal">
     <div style="text-align: center;">
-        <img src="assets/profile.jpg" alt="Profile" class="profile neon-border" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 20px;" />
-        <h2 class="neon-text">👤 Mr: <span class="accent shimmer">Pamudith</span></h2>
-        <p class="intro-text" style="max-width: 600px; margin: 0 auto;">
-        “I am a <b>full-stack</b> and <b>UI/UX engineer</b> learning to build efficient, scalable applications with intuitive interfaces.
-        "Building the future with code. I specialize in MERN Stack Development and UI/UX Design, solving complex problems with clean, efficient solutions. Whether it's a web app or an educational platform, I bring innovation to every project."
-        </p>
+      <img src="assets/profile.jpg" alt="Profile" class="profile neon-border"
+        style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 20px;" />
+      <h2 class="neon-text">👤 Mr: <span class="accent shimmer">Pamudith</span></h2>
+      <p class="intro-text" style="max-width: 600px; margin: 0 auto;">
+        “I am a <b>full-stack</b> and <b>UI/UX engineer</b> learning to build efficient, scalable applications with
+        intuitive interfaces.
+        "Building the future with code. I specialize in MERN Stack Development and UI/UX Design, solving complex
+        problems with clean, efficient solutions. Whether it's a web app or an educational platform, I bring innovation
+        to every project."
+      </p>
     </div>
   </section>
 
   <section id="education" class="container reveal">
     <h2 class="neon-text">🎓 Education</h2>
-    
+
     <div class="grid-container">
-      
+
       <div id="edu1" class="card lift neon-card">
         <div class="edu-content">
           <h3 class="edu-title">🏛️ Primary Education (2007–2016)</h3>
@@ -246,65 +267,66 @@
         <p>Crafting engaging, user-focused designs.</p>
       </a>
 
-     <a href="service-teacher.html" target="_blank" class="card lift service-card">
-       <img src="assets/teacher.jpg" alt="Prospective Teacher" class="service-img" />
-       <h3>As a Prospective Teacher</h3>
-       <p>I aim to share my knowledge and inspire others to pursue excellence in technology and innovation.</p>
-     </a>
-     
+      <a href="service-teacher.html" target="_blank" class="card lift service-card">
+        <img src="assets/teacher.jpg" alt="Prospective Teacher" class="service-img" />
+        <h3>As a Prospective Teacher</h3>
+        <p>I aim to share my knowledge and inspire others to pursue excellence in technology and innovation.</p>
+      </a>
+
     </div>
   </section>
 
 
-<section id="websites" class="container reveal">
+  <section id="websites" class="container reveal">
     <h2 class="neon-text">🗂️ My Live Projects</h2>
     <div class="grid-container">
-      
+
       <a href="https://edu-n-co-e.vercel.app/" target="_blank" class="card lift neon-card">
         <img src="assets/Asateacher/project4.jpg" alt="EduWeb" class="project-img">
         <div class="card-content">
-            <h3>🎓 EduWeb</h3>
-            <p>NCOE Exchange Program Portal</p>
+          <h3>🎓 EduWeb</h3>
+          <p>NCOE Exchange Program Portal</p>
         </div>
       </a>
-      
+
       <a href="https://pixelprism.us/audiolibrary/cash/" target="_blank" class="card lift neon-card">
         <img src="assets/Asateacher/project3.jpg" alt="Audio Library" class="project-img">
         <div class="card-content">
-            <h3>🎙️ Audio Library</h3>
-            <p>Voice-controlled system for visually impaired</p>
+          <h3>🎙️ Audio Library</h3>
+          <p>Voice-controlled system for visually impaired</p>
         </div>
       </a>
-      
+
       <a href="https://pamudith11.github.io/Photographer-Finder/" target="_blank" class="card lift neon-card">
         <img src="assets/Asateacher/project1.jpg" alt="Photo Finder" class="project-img">
         <div class="card-content">
-            <h3>📸 Photo Finder</h3>
-            <p>Photographer Booking Website</p>
+          <h3>📸 Photo Finder</h3>
+          <p>Photographer Booking Website</p>
         </div>
       </a>
-      
+
       <a href="https://pamudithsamaranatha.netlify.app/" target="_blank" class="card lift neon-card">
         <img src="assets/Asateacher/project5.jpg" alt="Portfolio" class="project-img">
         <div class="card-content">
-            <h3>🌐 Portfolio</h3>
-            <p>Personal Portfolio Website</p>
+          <h3>🌐 Portfolio</h3>
+          <p>Personal Portfolio Website</p>
         </div>
       </a>
-      
-      <a href="https://github.com/Pamudith11/AI-Powerd-Application-Tracking-System" target="_blank" class="card lift neon-card">
+
+      <a href="https://github.com/Pamudith11/AI-Powerd-Application-Tracking-System" target="_blank"
+        class="card lift neon-card">
         <img src="assets/Asateacher/project6.jpg" alt="AI Tracking" class="project-img">
         <div class="card-content">
-            <h3>🤖 AI Tracking</h3>
-            <p>AI Powered Applications Tracking System</p>
+          <h3>🤖 AI Tracking</h3>
+          <p>AI Powered Applications Tracking System</p>
         </div>
       </a>
-      
+
       <a href="https://github.com/Pamudith11/22UG1-0028-Mid-tearm-project" target="_blank" class="card lift neon-card">
         <img src="assets/Asateacher/project2.jpg" alt="LMS" class="project-img">
         <div class="card-content">
-            <h3>📚 LMS</h3>
-            <p>Library Management System</p>
+          <h3>📚 LMS</h3>
+          <p>Library Management System</p>
         </div>
       </a>
 
@@ -334,13 +356,13 @@
         <img src="assets/react.png" alt="React" class="skill-img">
         <span>React</span>
       </div>
-      
+
       <div class="skill lift neon-skill">
         <img src="assets/node.png" alt="Node" class="skill-img">
         <span>Node.js</span>
       </div>
 
-       <div class="skill lift neon-skill">
+      <div class="skill lift neon-skill">
         <img src="assets/flutter.png" alt="Flutter" class="skill-img">
         <span>Flutter</span>
       </div>
@@ -350,43 +372,46 @@
         <span>Python</span>
       </div>
 
-    <div class="skill lift neon-skill">
-      <img src="assets/java.png" alt="Java" class="skill-img">
-      <span>Java</span>
-    </div>
+      <div class="skill lift neon-skill">
+        <img src="assets/java.png" alt="Java" class="skill-img">
+        <span>Java</span>
+      </div>
 
-    <div class="skill lift neon-skill">
-      <img src="assets/mysql.png" alt="MySQL" class="skill-img">
-      <span>MySQL</span>
-    </div>
+      <div class="skill lift neon-skill">
+        <img src="assets/mysql.png" alt="MySQL" class="skill-img">
+        <span>MySQL</span>
+      </div>
 
-    <div class="skill lift neon-skill">
-      <img src="assets/git.png" alt="Git" class="skill-img">
-      <span>Git</span>
-    </div>
+      <div class="skill lift neon-skill">
+        <img src="assets/git.png" alt="Git" class="skill-img">
+        <span>Git</span>
+      </div>
 
-    <div class="skill lift neon-skill">
-      <img src="assets/figma.png" alt="Figma" class="skill-img">
-      <span>Figma</span>
-    </div>
+      <div class="skill lift neon-skill">
+        <img src="assets/figma.png" alt="Figma" class="skill-img">
+        <span>Figma</span>
+      </div>
 
-    <div class="skill lift neon-skill">
-      <img src="assets/cpp.png" alt="C++" class="skill-img">
-      <span>C++</span>
+      <div class="skill lift neon-skill">
+        <img src="assets/cpp.png" alt="C++" class="skill-img">
+        <span>C++</span>
+      </div>
+
     </div>
-      
-    </div>
- </section>
+  </section>
 
   <section id="social" class="container reveal">
     <h2 class="neon-text">🌐 Connect With Me</h2>
     <div class="social-icons" style="text-align: center; margin-top: 20px; font-size: 1.5rem;">
       <a href="https://wa.me/94778965382" class="social-btn"><i class="fab fa-whatsapp"></i></a>
-      <a href="https://www.facebook.com/share/1C3DNnXs9c/?mibextid=wwXIfr" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.facebook.com/share/1C3DNnXs9c/?mibextid=wwXIfr" class="social-btn"><i
+          class="fab fa-facebook-f"></i></a>
       <a href="mailto:pamudith11@gmail.com" class="social-btn" aria-label="Gmail"><i class="fab fa-google"></i></a>
       <a href="https://github.com/Pamudith11" class="social-btn"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/pamudith-samaranatha-4b2987268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
-      <a href="https://www.instagram.com/pamudith_?igsh=MTV5dmlwdjNrNGF0YQ%3D%3D&utm_source=qr" class="social-btn"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/pamudith-samaranatha-4b2987268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+        class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/pamudith_?igsh=MTV5dmlwdjNrNGF0YQ%3D%3D&utm_source=qr" class="social-btn"><i
+          class="fab fa-instagram"></i></a>
     </div>
   </section>
 
@@ -401,18 +426,19 @@
   </section>
 
   <footer>
-    <p class="neon-text" style="text-align: center; margin-top: 50px; padding-bottom: 20px;">© 2025 Pamudith. All rights reserved.</p>
+    <p class="neon-text" style="text-align: center; margin-top: 50px; padding-bottom: 20px;">© 2025 Pamudith. All rights
+      reserved.</p>
   </footer>
 
   <script>
     // Dark/Light Mode Toggle
     const toggle = document.getElementById("mode-toggle");
     const body = document.body;
-    if(toggle){
-        toggle.addEventListener("click", () => {
+    if (toggle) {
+      toggle.addEventListener("click", () => {
         body.classList.toggle("light");
         toggle.textContent = body.classList.contains("light") ? "☀️" : "🌙";
-        });
+      });
     }
 
     // Scroll Reveal Animation
@@ -427,4 +453,5 @@
     onScroll(); // Trigger once on load
   </script>
 </body>
+
 </html>
