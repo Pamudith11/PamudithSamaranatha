@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>As a Prospective Teacher | Pamudith</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="service-fullstack.css" />
+  <link rel="stylesheet" href="service-teacher.css" />
+
+  <style>
+    /* ---- Custom Styles for this Page ---- */
+
+    /* --- Navigation Bar Styles (New Addition) --- */
+    body {
+      padding-top: 70px; /* Space for fixed navbar */
+      margin: 0;
+      min-height: 100vh;
+    }
+
+    /* Background for Landscape/Wide screens */
+    body:not(.portrait) {
+      background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.9)), url('assets/fullstack/nav-bg.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+
+    /* Background for Portrait/Mobile screens */
+    @media (max-width: 768px) {
+      body {
+        background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.9)), url('assets/Asateacher/teacher-bg-portrait.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+      }
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      /* Dark Background with strong opacity */
+      background: rgba(10, 10, 20, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 2px solid #00fff2;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      box-shadow: 0 5px 30px rgba(0, 229, 255, 0.5);
+    }
+
+    .nav-logo {
+      color: #00fff2;
+      font-size: 1.8rem;
+      font-weight: 900;
+      text-decoration: none;
+      text-shadow: 0 0 20px rgba(0, 229, 255, 0.8), 0 0 40px rgba(0, 229, 255, 0.4);
+      letter-spacing: 2px;
+    }
+
+    .nav-menu {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-menu li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+      font-family: 'Poppins', sans-serif;
+      text-shadow: 0 0 10px rgba(0, 229, 255, 0.4);
+    }
+
+    .nav-menu li a:hover {
+      color: #00fff2;
+      text-shadow: 0 0 20px rgba(0, 229, 255, 0.8), 0 0 40px rgba(0, 229, 255, 0.5);
+    }
+
+    .hamburger {
+      display: none;
+      cursor: pointer;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .bar {
+      width: 25px;
+      height: 3px;
+      background-color: #00fff2;
+      transition: 0.3s;
+      box-shadow: 0 0 10px rgba(0, 229, 255, 0.6);
+    }
+
+    /* Mobile Nav */
+    @media (max-width: 1024px) {
+      .navbar {
+        padding: 15px 20px;
+      }
+      
+      .hamburger {
+        display: flex;
+      }
+
+      .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 60px;
+        flex-direction: column;
+        background: rgba(10, 10, 20, 0.98);
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        transition: 0.4s;
+        border-bottom: 2px solid #00fff2;
+        box-shadow: 0 5px 30px rgba(0, 229, 255, 0.4);
+      }
+
+      .nav-menu.active {
+        right: 0;
+      }
+
+      .nav-menu li {
+        margin: 15px 0;
+      }
+    }
+
+    /* Container styling */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Video Styling (Not Background anymore) */
+    .video-wrapper {
+      width: 100%;
+      max-width: 800px;
+      /* Desktop වල ගොඩක් ලොකු නොවී තියෙන්න */
+      margin: 30px auto 50px auto;
+      /* මැදට ගන්න */
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0, 229, 255, 0.4);
+      /* Neon Glow Effect */
+      border: 1px solid rgba(0, 229, 255, 0.5);
+    }
+
+    .top-video {
+      width: 100%;
+      display: block;
+    }
+
+    /* Intro Text Styling */
+    .intro-text {
+      max-width: 700px;
+      margin: 0 auto 20px auto;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    /* Gallery Grid System (Modern & Responsive) */
+    .gallery {
+      display: grid;
+      /* ඉඩ තියෙන විදියට columns හැදෙනවා (Mobile = 1, PC = 3 or 4) */
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 40px 20px;
+      justify-content: center;
+    }
+
+    /* අලුත් Header එකට Style එක */
+    .main-header {
+      /* ඔබට අවශ්‍ය රූපය මෙතනට දමන්න */
+      background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.9)), url('assets/fullstack/nav-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      min-height: 100vh;
+      width: 100%;
+      padding-bottom: 50px; /* පහළින් පොඩි ඉඩක් තියන්න */
+      margin-bottom: 30px;
+    }
+
+    /* Image Card Styling (Mobile & Desktop) */
+    .img-box {
+      background: rgba(10, 10, 20, 0.85);
+      /* Dark background like navbar */
+      border: 3px solid #00fff2;
+      border-radius: 15px;
+      padding: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
+    }
+
+    /* Mouse ගෙනිච්චාම උඩට එන Effect එක */
+    .img-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 229, 255, 0.6), inset 0 0 15px rgba(0, 229, 255, 0.2);
+      border-color: #00fff2;
+    }
+
+    .img-box img {
+      width: 100%;
+      height: 220px;
+      /* හැම පින්තූරයක්ම එකම උසට */
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .img-box h3 {
+      font-size: 1.1rem;
+      color: #00fff2;
+      margin-bottom: 10px;
+      text-align: center;
+      min-height: 40px;
+      /* To align titles somewhat */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+      font-weight: 600;
+    }
+
+    .img-box p.desc {
+      font-size: 0.75rem;
+      color: #ffffff;
+      margin-top: 10px;
+      text-align: justify;
+      line-height: 1.4;
+    }
+
+    /* Section scroll offset for anchors */
+    .bio-section-target {
+        scroll-margin-top: 100px;
+    }
+
+    /* ---- Mobile Specific Styling (More Beautiful) ---- */
+    @media (max-width: 600px) {
+      .container {
+        padding: 15px;
+      }
+
+      .neon-text {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+      }
+
+      .intro-text {
+        font-size: 0.9rem;
+        padding: 0 10px;
+      }
+
+      .video-wrapper {
+        margin: 20px auto 30px auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+        /* Mobile වල තනි පේළියට */
+        gap: 25px;
+      }
+
+      .img-box {
+        background: rgba(10, 10, 20, 0.85);
+        /* Dark background like navbar */
+        padding: 12px;
+        border: 3px solid #00fff2;
+        box-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
+      }
+    }
+
+    /* Profile Image for Teacher Page */
+    .profile-img-teacher {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 20px auto;
+      display: block;
+      border: 3px solid #00fff2;
+      /* standard accent color if var doesn't work here, but let's try inline or rely on global var if defined in style.css */
+      box-shadow: 0 0 15px #00fff2;
+    }
+  </style>
+</head>
+
+<body id="home">
+
+  <nav class="navbar">
+    <a href="service-teacher-home.html" class="nav-logo">Pamudith.</a>
+    <ul class="nav-menu">
+      <li><a href="service-teacher-home.html">Home</a></li>
+      <li><a href="service-teacher-personal-details.html">Personal Details</a></li>
+      <li><a href="service-teacher-qualifications.html">Educational Qualifications</a></li>
+      <li><a href="service-teacher-philosophy.html">Work Philosophy</a></li>
+      <li><a href="service-teacher-extra-curricular.html">Extra Curricular</a></li>
+      <li><a href="service-teacher-siyane.html">Siyane Programmes</a></li>
+    </ul>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+  <section class="container reveal">
+    <h1 class="neon-text">ගුරු ශිෂ්‍යයෙකු ලෙස</h1>
+
+    <img src="assets/teacher-profile.jpg" alt="Teacher Profile" class="profile-img-teacher reveal" />
+
+    <div class="bio-container" style="
+        max-width: 900px;
+        margin: 30px auto;
+        padding: 40px;
+        background: rgba(12, 12, 12, 0.9); /* Reverted to solid dark */
+        border: 1px solid var(--accent);
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+        color: #e0e0e0;
+        font-family: 'Sinhala', 'Poppins', sans-serif;
+        line-height: 1.8;
+        text-align: left;
+        position: relative;
+        overflow: hidden;
+    ">
+
+      <div style="margin-bottom: 30px; text-align: center;">
+        <p style="font-size: 1.1rem; color: #ccc;">
+          පමුදිත් සමරනාථ වන මම මෙම portfolio ශික්ෂණ විද්‍යා ඩිප්ලෝමා පාඨමාලාව සඳහා සියනෑ ජාතික අධ්‍යාපන විද්‍යා පීඨය වෙත
+          ඉදිරිපත් කරමි.
+          මෙහි අඩංගුකර ඇති සියළුම කරුණු මගේ දැනුමේ හා විශ්වාසයේ පරිදි සත්‍ය හා නිවැරදි බවත් ශ්‍රී ලංකාවේ හෝ වෙනත්
+          විදේශීය රාජ්‍යයක කුමන හෝ විශ්වවිද්‍යලයකට හෝ උසස් අධ්‍යාපන ආයතනයකට උපාධියක් හෝ ඩිප්ලෝමාවක් වෙනුවෙන් ඉදිරිපත්
+          කරන ලද්දක් නොවන බවත්, මුලාශ්‍රයක් ලෙස ආශ්‍රිත ග්‍රන්ථ නාමාවලියේ සදහන් කර මිස කිසිදු උපුටා ගැනීමක් ඇතුළත් කර
+          නොමැති බවත් සහතික කරමි.
+        </p>
+      </div>
+
+      <div id="philosophy" class="bio-section-target" style="margin-bottom: 30px;">
+        <h3
+          style="color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 10px; margin-bottom: 15px; display: inline-block;">
+          රාජකාරී පිළිබඳ දර්ශනය</h3>
+
+        <p style="margin-bottom: 15px;">
+          ගුරුවරයෙකුගේ රාජකාරිය යනු හුදෙක් කරුණු කියාදීමෙන් එහා ගිය, ශිෂ්‍යයාගේ පෞරුෂය සහ අනාගතය හැඩගස්වන උදාර මෙහෙවරකි.
+        </p>
+
+        <blockquote style="
+              background: rgba(0, 229, 255, 0.1);
+              border-left: 5px solid var(--accent);
+              margin: 10px 0;
+              padding: 15px;
+              font-style: italic;
+              font-size: 1.1rem;
+              color: #fff;
+            ">
+          "හොඳ ගුරුවරයෙකු උගන්වයි, දක්ෂ ගුරුවරයෙකු පැහැදිලි කරයි, උසස් ගුරුවරයෙකු ප්‍රායෝගිකව පෙන්වයි, නමුත් ශ්‍රේෂ්ඨ
+          ගුරුවරයෙකු දරුවාව ප්‍රබෝධමත් (Inspire) කරයි."
+        </blockquote>
+      </div>
+
+  <script>
+    // Simple reveal animation on scroll
+    const reveals = document.querySelectorAll(".reveal");
+    const onScroll = () => {
+      for (let r of reveals) {
+        const top = r.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) r.classList.add("in-view");
+      }
+    };
+    window.addEventListener("scroll", onScroll);
+    onScroll();
+
+    // Mobile Menu Toggle Script (New Addition)
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav-menu li a").forEach(n => n.addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }));
+  </script>
+</body>
+
+</html>
