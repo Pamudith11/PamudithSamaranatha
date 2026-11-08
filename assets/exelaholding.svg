@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title">
+  <title id="title">ExelaHolding business and property</title>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#101b2c"/>
+      <stop offset="1" stop-color="#25203b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#00fff2"/>
+      <stop offset="1" stop-color="#ff00e6"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" rx="24" fill="url(#background)"/>
+  <circle cx="320" cy="184" r="127" fill="#17283c" stroke="#334057" stroke-width="2"/>
+  <path d="M169 266h302" stroke="url(#accent)" stroke-linecap="round" stroke-width="7"/>
+  <path d="M200 266V166h76v100m16 0V119h82v147m22 0v-72h61v72" fill="#102d42" stroke="#00fff2" stroke-linejoin="round" stroke-width="5"/>
+  <path d="M218 188h15m20 0h8m-43 26h15m20 0h8m-43 26h15m20 0h8m49-96h15m21 0h15m-51 25h15m21 0h15m-51 25h15m21 0h15m30 30h14m20 0h9m-43 24h14m20 0h9" stroke="#a3d8dc" stroke-linecap="round" stroke-width="6"/>
+  <path d="m264 100 72-31 72 31" fill="none" stroke="url(#accent)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+  <circle cx="139" cy="108" r="5" fill="#00fff2"/>
+  <circle cx="505" cy="110" r="7" fill="#ff00e6"/>
+  <circle cx="500" cy="286" r="4" fill="#00fff2"/>
+</svg>

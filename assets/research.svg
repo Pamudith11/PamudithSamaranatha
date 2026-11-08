@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title">
+  <title id="title">Research and discovery</title>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#081b2a"/>
+      <stop offset="1" stop-color="#16102b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#00fff2"/>
+      <stop offset="1" stop-color="#ff00e6"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" rx="24" fill="url(#background)"/>
+  <circle cx="320" cy="180" r="118" fill="#0c2536" stroke="#174156" stroke-width="2"/>
+  <path d="M183 112h112a22 22 0 0 1 22 22v137H205a22 22 0 0 1-22-22z" fill="#102f42" stroke="#00fff2" stroke-width="4"/>
+  <path d="M457 112H345a22 22 0 0 0-22 22v137h112a22 22 0 0 0 22-22z" fill="#14233d" stroke="#00fff2" stroke-width="4"/>
+  <path d="M213 151h70m-70 25h70m-70 25h52m63-50h70m-70 25h70m-70 25h52" fill="none" stroke="#8bdde0" stroke-linecap="round" stroke-width="7"/>
+  <circle cx="407" cy="235" r="36" fill="#102f42" stroke="url(#accent)" stroke-width="9"/>
+  <path d="m434 262 35 35" stroke="url(#accent)" stroke-linecap="round" stroke-width="13"/>
+  <circle cx="125" cy="72" r="5" fill="#00fff2"/>
+  <circle cx="520" cy="83" r="7" fill="#ff00e6"/>
+  <circle cx="512" cy="297" r="4" fill="#00fff2"/>
+</svg>

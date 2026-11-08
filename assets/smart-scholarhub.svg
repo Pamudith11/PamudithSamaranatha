@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title">
+  <title id="title">Smart Scholarhub learning platform</title>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#082332"/>
+      <stop offset="1" stop-color="#15203d"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#00fff2"/>
+      <stop offset="1" stop-color="#28a6ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" rx="24" fill="url(#background)"/>
+  <circle cx="320" cy="180" r="126" fill="#0b2d3e" stroke="#17465a" stroke-width="2"/>
+  <path d="m202 145 118-54 118 54-118 55z" fill="#142f56" stroke="url(#accent)" stroke-linejoin="round" stroke-width="7"/>
+  <path d="M231 166v67c51 36 127 36 178 0v-67l-89 41z" fill="#10405a" stroke="#00fff2" stroke-linejoin="round" stroke-width="5"/>
+  <path d="M438 151v73" stroke="#00fff2" stroke-linecap="round" stroke-width="7"/>
+  <circle cx="438" cy="234" r="11" fill="#ff00e6"/>
+  <path d="M267 266h106m-88 16h70" stroke="#75cad5" stroke-linecap="round" stroke-width="6"/>
+  <circle cx="138" cy="92" r="5" fill="#00fff2"/>
+  <circle cx="506" cy="103" r="7" fill="#28a6ff"/>
+  <circle cx="500" cy="280" r="4" fill="#ff00e6"/>
+</svg>

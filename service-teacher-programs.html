@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>As a Prospective Teacher | Pamudith</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="service-fullstack.css" />
+
+  <style>
+    /* ---- General Styles ---- */
+    body {
+      margin: 0;
+      padding-top: 70px;
+      /* Navbar එකට ඉඩ තියන්න */
+      background-color: #050505;
+      /* Default Dark Background */
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* ---- Navbar Styling ---- */
+    .top-navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(10, 10, 15, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0, 255, 242, 0.3);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      z-index: 9999;
+      padding: 10px 0;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding: 0 20px;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: #e0e0e0;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 500;
+      padding: 8px 15px;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+      background: rgba(0, 255, 242, 0.05);
+      border: 1px solid rgba(0, 255, 242, 0.2);
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: #fff;
+      background: rgba(0, 255, 242, 0.15);
+      border-color: rgba(0, 255, 242, 0.4);
+      text-shadow: 0 0 8px rgba(0, 255, 242, 0.6);
+    }
+
+    /* ---- Container & Layout ---- */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h2.section-title {
+      color: #00fff2;
+      margin-bottom: 30px;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+    }
+
+    /* ---- Video Section ---- */
+    .video-wrapper {
+      width: 100%;
+      max-width: 800px;
+      margin: 30px auto 10px auto;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0, 229, 255, 0.4);
+      border: 1px solid rgba(0, 229, 255, 0.5);
+    }
+
+    .top-video {
+      width: 100%;
+      display: block;
+    }
+
+    .caption {
+      margin-top: 10px;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+
+    /* ---- Bio/List Section ---- */
+    .bio-container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 40px;
+      background: rgba(12, 12, 12, 0.9);
+      border: 1px solid #00fff2;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+      color: #e0e0e0;
+      font-family: 'Sinhala', 'Poppins', sans-serif;
+      line-height: 1.8;
+      text-align: left;
+    }
+
+    .bio-item {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .bio-item span {
+      margin-right: 10px;
+    }
+
+    /* ---- Scroll Animation (Reveal) ---- */
+    .reveal {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease;
+    }
+
+    .reveal.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ---- Mobile Responsive ---- */
+    @media (max-width: 768px) {
+      .nav-link {
+        font-size: 0.75rem;
+        padding: 6px 10px;
+      }
+
+      body {
+        padding-top: 110px;
+        /* Mobile වල Navbar එක උස වැඩි නිසා */
+      }
+
+      .bio-container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="top-navbar">
+    <div class="nav-container">
+      <a href="service-teacher.html" class="nav-link">Home</a>
+      <a href="service-teacher-personal.html" class="nav-link">Personal</a>
+      <a href="service-teacher-education.html" class="nav-link">Education</a>
+      <a href="service-teacher-philosophy.html" class="nav-link">Philosophy</a>
+      <a href="service-teacher-programs.html" class="nav-link active">Programmes</a>
+      <a href="service-teacher-gallery.html" class="nav-link">Gallery</a>
+    </div>
+  </nav>
+
+  <section id="programmes" class="container reveal">
+    <h2 class="section-title">My contributions for the programmes held at Siyane National College of Education</h2>
+
+    <div class="video-wrapper">
+      <video autoplay muted loop playsinline class="top-video">
+        <source src="assets/video/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <p class="caption">Block Teaching Demonstration - 2025</p>
+
+    <div class="bio-container">
+      <div class="bio-item"><span>🛑</span> 2024 නොවැම්බර් - දෙසැම්බර් ආහාර කමිටුවේ සාමාජිකයෙකු වීම</div>
+      <div class="bio-item"><span>🛑</span> ඉංග්‍රීසි සාහිත්‍ය සංගමයේ සාමාජිකයෙකුවීම</div>
+      <div class="bio-item"><span>🛑</span> මාධ්‍ය සංගමයේ සාමාජිකයෙකු වීම</div>
+      <div class="bio-item"><span>🛑</span> මාධ්‍ය දින උත්සවය සඳහා නිර්මාණ</div>
+      <div class="bio-item"><span>🛑</span> කාර්ය භාර ශිෂ්‍යයෙකු ලෙස 2025.(01.07)(04.07)(07.20)(10.26) 2026.02.06</div>
+      <div class="bio-item"><span>🛑</span> 2025 නොවැම්බර් - දෙසැම්බර් ආහාර කමිටුවේ සාමාජිකයෙකු වීම</div>
+      <div class="bio-item"><span>🛑</span> Steamducation Center ආරාධනා පත්‍ර සැකසීම</div>
+      <div class="bio-item"><span>🛑</span> මාධ්‍ය දින සැරසිලි නිර්මාණය</div>
+      <div class="bio-item"><span>🛑</span> 2024 ඔක්තොම්බර් මස 23වන දින ඉංග්‍රීසි සාහිත්‍ය සංගමය මගින් පැවැත්වූ නාට්‍ය
+        සදහා රංගනයෙන් සහ සැරසිලි කටයුතු සඳහා දායක විය.</div>
+      <div class="bio-item"><span>🛑</span> ආගමික සංගමයෙන් පවත්වනු ලැබූ නත්තල් උත්සවය සඳහා 2024.12.05 වන දින ඡායාරූප
+        ශිල්පියෙකු ලෙස</div>
+      <div class="bio-item"><span>🛑</span> 2024.12.12 වන දින සංස්කෘතික සංගමය මඟින් පවත්වනු ලැබූ සත්සර දැහැන සඳහා චිත්‍ර
+        ඇදීම, ඡායාරූප ශිල්පියෙකු ලෙස</div>
+      <div class="bio-item"><span>🛑</span> 2025 06 මස 06 වන දින පරිසර දිනය සඳහා පත්‍රිකා නිර්මාණය</div>
+      <div class="bio-item"><span>🛑</span> 2025.03.28 වන දින පැවැත්වූ නිවාසාන්තර ක්‍රීඩා උළෙලේ සැරසිලි කටයුතු සඳහා දායක
+        විය</div>
+      <div class="bio-item"><span>🛑</span> 2025.04.23 වන දින සංස්කෘතික සංගමය මගින් පැවැත්වූ අවුරුදු උත්සවය සැරසිලි
+        කටයුතු වලට සහභාගි විය</div>
+      <div class="bio-item"><span>🛑</span> උත්සවයක න්‍යාය පත්‍ර නිර්මාණය</div>
+      <div class="bio-item"><span>🛑</span> 2026.01.14 වන දින පැවැත්වූ තෛපොංගල් උත්සවය සැරසිලි කිරීම</div>
+      <div class="bio-item"><span>🛑</span> 2026 ජනවාරි මස 20 වන දින ඉංග්‍රීසි සාහිත්‍ය සංගමය මගින් පැවැත්වූ නාට්‍ය සදහා
+        සැරසිලි සඳහා සහභාගී විය</div>
+      <div class="bio-item"><span>🛑</span> කාර්ය භාර ශිෂ්‍යයෙකු ලෙස 2025.(01.07)(04.07)(07.20)(10.26) 2026.02.06</div>
+      <div class="bio-item"><span>🛑</span> 2025 ගුරු දින උත්සව සැරසිලි සංවිදනය</div>
+      <div class="bio-item"><span>🛑</span> පිරිතට සමගාමීව පැවැත්වූ පෙරහැරට සහභාගි විය</div>
+      <div class="bio-item"><span>🛑</span> පිරිතට සමගාමීව පැවැත්වූ පෙරහැර ඡායාරූප ශිල්පියෙකු ලෙස</div>
+      <div class="bio-item"><span>🛑</span> උදෑසන රැස්වීම නිවේදනය කිරීම</div>
+      <div class="bio-item"><span>🛑</span> ප්‍රීති කරුණාතිලක මැතිණියගේ නික්මයාම උත්සවයේ කටයුතු සඳහා දායක විය.</div>
+      <div class="bio-item"><span>🛑</span> 2026 මහගමසේකර දින වීඩියෝ පට නිර්මාණය</div>
+      <div class="bio-item"><span>🛑</span> ඉංග්‍රීසි සාහිත්‍ය සංගමය මගින් පැවැත්වූ නාට්‍ය තරඟයේ වීඩියෝ ශිල්පියෙකු ලෙස
+      </div>
+    </div>
+
+  </section>
+
+  <script>
+    const reveals = document.querySelectorAll(".reveal");
+    const onScroll = () => {
+      for (let r of reveals) {
+        const windowHeight = window.innerHeight;
+        const elementTop = r.getBoundingClientRect().top;
+        const elementVisible = 100;
+
+        if (elementTop < windowHeight - elementVisible) {
+          r.classList.add("in-view");
+        } else {
+          // Optional: remove class to animate out when scrolling up
+          // r.classList.remove("in-view"); 
+        }
+      }
+    };
+    window.addEventListener("scroll", onScroll);
+    // Trigger once on load
+    onScroll();
+  </script>
+
+</body>
+
+</html>
